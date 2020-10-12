@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+
+<head>
+    <title>Web development</title>
+    <style>
+        .left {
+            width: fit-content;
+        }
+
+        .click {
+            width: 200px;
+            height: 100%;
+            background-color: red;
+            color: white;
+            left: 0;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .navBar{
+            display: none;
+        }
+
+        .click:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+
+        .click:hover + .navBar{
+            display: flex;
+        }
+        .responsive{
+        display: none;
+        }
+        
+        @media screen and (max-width: 800px){
+        .responsive{
+        	   float:left; 
+               color: white; 
+               justify-content: center;
+               width: 200px; 
+               height: 50px;
+               background-color: red;
+               displaY: flex;
+               align-items: center;
+        }
+        
+        .responsive:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+        
+        .responsive:hover ~ div div .navBar{
+        	display: flex;
+        }
+        
+        .click{
+        	display: none;
+        }
+        }
+    </style>
+</head>
+
+<body style="height:100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px">
+    <div class="responsive">Click</div>
+    <div style="background-color: #333;
+                height: 50px;
+                top: 0;
+                width: 100%;
+                left: 0;">
+        
+
+        <a href="/MyRepo/javascript/syntax1.html" style=" float: right;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;">Javascript</a>
+
+        <a href="/MyRepo/css/syntax.html" style=" float: right;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;">CSS</a>
+
+        <a href="/MyRepo/html/headings.html" style=" float: right;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;">HTML</a>
+    </div>
+
+    <div style="display: flex; height: 100%;">
+        <div style="display: flex; height: 100%;" class="left">
+            <div class="click">
+                <span>Click</span>
+            </div>
+            <div style="top: 50px;
+                width: 300px;
+                height: 100%;
+                " class="navBar">
+                <ul style=" list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 300px;
+                    background-color: #f1f1f1;
+                    height: 100%;
+                    overflow: auto;">
+                    <li>
+                        <a href="/MyRepo/html/headings.html" style=" display: block;
+                            padding: 8px 16px;
+                            color: white;
+                            text-decoration: none;
+                            background-color: #4CAF50;">Headings</a>
+
+                        <a href="/MyRepo/html/paragraphs.html" style="display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;">Paragraphs</a>
+
+                        <a href="/MyRepo/html/paragraphs.html" style="display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;">Links</a>
+
+                        <a href="/MyRepo/html/paragraphs.html" style="display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;">Images</a>
+
+                        <a href="/MyRepo/html/paragraphs.html" style="display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;">Lists</a>
+
+                        <a href="/MyRepo/html/paragraphs.html" style="display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;">Tables</a>
+
+                        <a href="/MyRepo/html/paragraphs.html" style="display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;">Forms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2>HTML >>> headings</h2>
+            <p>This is a paragraph about HTML headings</p>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
